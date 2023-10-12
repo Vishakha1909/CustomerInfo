@@ -1,0 +1,27 @@
+html css js
+
+create customer form
+
+SCREEN 1
+fname
+lname
+middlename - o
+25 char max length for each.
+drop down - identity proof (passport, aadhar, driving license)
+text field for value of id proof number - validated field - for each proof specifically
+next button to next screen
+
+SCREEN 2 (url should change on this)
+address info
+pincode - on entering it should fill state, city
+address line 1 line 2 - max 25 char
+next button to pop up
+
+POP UP
+shows address typed - asks confirm or cancel.
+
+should look decent too
+
+TIMELINE
+10/10/2023 10:00 AM
+

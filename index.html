@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>CUSTOMER REGISTRATION</h2>
+        <form id="customer-form" action="/address.html">
+            <label for="first-name">First Name* : </label>
+            <input type="text" id="first-name" name="first-name" maxlength="25" required>
+            <br>
+            <label for="last-name">Last Name* : </label>
+            <input type="text" id="last-name" name="last-name" maxlength="25" required>
+            <br>
+            <label for="middle-name">Middle Name: </label>
+            <input type="text" id="middle-name" name="middle-name" maxlength="25">
+            <br>
+            <label for="identity-proof">Identity Proof: </label>
+            <select id="identity-proof" name="identity-proof">
+                <option value="">Select Identity Proof</option>
+                <option value="Passport">Passport</option>
+                <option value="Aadhar">Aadhar Card</option>
+                <option value="DrivingLicense">Driving License</option>
+            </select>
+            <br>
+            <label for="proof-value">Value of the Selected Identity Proof</label>
+            <input type="text" id="proof-value" name="proof-value">
+            <br>
+            <div class="error-message" id="validation-error"></div>
+            <button type="button" onclick="validateForm()">NEXT</button>
+        </form>
+    </div>
+</body>
+</html>

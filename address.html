@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address</title>
+    <link rel="stylesheet" href="address.css">
+</head>
+<body>
+    <div class="container">
+    <div class="title-container">
+        <h2 class="main-title">ADDRESS</h2>
+    </div>
+    <div class="form-container">
+        <form id="address-form">
+                <label for="pincode">Pincode*: </label>
+                <input type="text" id="pincode" name="pincode" required maxlength="6">
+                <br>
+                <label for="city">City: </label>
+                <input type="text" id="city" name="city" readonly required>
+                <br>
+                <label for="state">State: </label>
+                <input type="text" id="state" name="state" readonly required>
+                <br>
+                <label for="addressLine1">Address Line 1*: </label>
+                <input type="text" id="addressLine1" style="width:98%" required name="addressLine1" maxlength="25">
+                <p class="error" id="errorMsg"></p>
+                <label for="addressLine2">Address Line 2: </label>
+                <input type="text" id="addressLine2" style="width:98%" name="addressLine2" maxlength="25">
+            <button id="nextButton" class="submit-button" type="submit">Submit</button>
+        </form>
+        
+        
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Address Confirmation</h2>
+            <div style="display: flex;">
+                <p id="addressInfo"></p>
+            </div>
+            <button type="button" class="submit-button" id="confirmButton" onclick="redirect()">Confirm</button>
+            <button type="button" class="submit-button" id="cancelButton">Cancel</button>
+        </div>
+    </div>
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <p>Please confirm the entered address:</p>
+            <p id="address-info"></p>
+            <button id="confirm-button">Confirm</button>
+            <button id="cancel-button">Cancel</button>
+        </div>
+    </div>
+    </div>
+    <script src="address.js"></script>
+   
+</body>
+</html>
